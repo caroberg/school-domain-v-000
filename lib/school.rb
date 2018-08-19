@@ -12,7 +12,7 @@ class School
 
   def grade(grade_level)
     @roster.each do |grade_level, student_name|
-      "#{grade_level}: #{student_name}"
+      @roster[grade_level]
     end
   end
 
