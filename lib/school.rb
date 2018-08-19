@@ -10,6 +10,10 @@ class School
     @roster[grade] << student_name
   end
 
-
+  def grade
+    @roster.each do |grade, student_name|
+      "#{grade}: #{student_name}"
+    end
+  end
 
 end
