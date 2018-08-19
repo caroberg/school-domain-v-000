@@ -1,17 +1,17 @@
 class School
   attr_accessor :roster, :student_name, :school_name
-def initialize(school_name)
-  @school_name = school_name
-  @roster = Hash.new{ |h, k| h[k] = [] }
-end
 
-  def add_student(student_name, grade_level)
-
-      @roster[grade-level] << student_name
+  def initialize(school_name)
+    @school_name = school_name
+    @roster = Hash.new{ |h, k| h[k] = [] }
   end
 
-  def grade(grade_level)
-    @roster[grade_level]
+  def add_student(student_name)
+    @roster[grade] << student_name
+  end
+
+  def grade
+    @roster[grade]
   end
 
 end
