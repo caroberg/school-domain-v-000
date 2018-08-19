@@ -11,9 +11,7 @@ class School
   end
 
   def grade(grade_level)
-    @roster.each do |grade_level, student_name|
-      @roster[grade_level]
-    end
+   @roster[grade_level].join(", ")
   end
 
 end
